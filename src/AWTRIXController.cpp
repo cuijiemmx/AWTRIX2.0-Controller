@@ -861,7 +861,8 @@ void updateMatrix(byte payload[], int length)
   
 			dfmp3.setVolume(payload[2]);
 			delay(10);
-			dfmp3.playMp3FolderTrack(payload[1]);
+			// dfmp3.playMp3FolderTrack(payload[1]);
+			dfmp3.playFolderTrack(1, payload[1]);
 		
 			break;
 		}
@@ -986,7 +987,8 @@ void updateMatrix(byte payload[], int length)
 		{
 			//Command 18: Play
 			
-			dfmp3.playMp3FolderTrack(payload[1]);
+			// dfmp3.playMp3FolderTrack(payload[1]);
+			dfmp3.playFolderTrack(1, payload[1]);
 			break;
 		}
 		case 19:
@@ -1131,7 +1133,8 @@ void updateMatrix(byte payload[], int length)
 		}
 		case 25:
 		{
-			dfmp3.playAdvertisement(payload[1]);
+			// dfmp3.playAdvertisement(payload[1]);
+			dfmp3.playFolderTrack(2, payload[1]);
 			break;
 		}
 		case 26:

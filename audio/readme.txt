@@ -1,0 +1,1 @@
+copy folders 01 and 02 to storage (sdcard, flash etc.) root
